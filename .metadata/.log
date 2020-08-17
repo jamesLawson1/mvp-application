@@ -1,0 +1,97 @@
+!SESSION 2020-08-17 15:25:53.289 -----------------------------------------------
+eclipse.buildId=3.5.1.201405030701-RELEASE-e44
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.ggts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.ggts.ide
+
+!ENTRY org.eclipse.mylyn.tasks.core 1 0 2020-08-17 15:27:12.034
+!MESSAGE Migrating task repository credentials from keyring.
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2020-08-17 15:27:13.591
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2020-08-17 15:27:13.591
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2020-08-17 15:27:13.591
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2020-08-17 15:27:13.591
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2020-08-17 15:27:13.591
+!MESSAGE Converted legacy STS plugin state locations
+
+!ENTRY com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-08-17 15:27:14.261
+!MESSAGE Error creating server instance. Check access permission for the directory C:/Program Files (x86)/ggts-bundle/vfabric-tc-server-developer-2.9.5.SR1 and its files and subdirectories.
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-08-17 15:27:14.261
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:84)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.templates.AbstractTemplateCommandExecutor.execute(AbstractTemplateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:22)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:77)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:151)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:115)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 6 more
+
+
+!ENTRY org.springsource.ide.eclipse.commons.configurator 4 0 2020-08-17 15:27:14.263
+!MESSAGE The server could not be created.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error creating server instance. Check access permission for the directory C:/Program Files (x86)/ggts-bundle/vfabric-tc-server-developer-2.9.5.SR1 and its files and subdirectories.
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.handleResult(TcServerUtil.java:130)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.executeInstanceCreation(TcServerUtil.java:91)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServer21ServerHandlerCallback.configureServer(TcServer21ServerHandlerCallback.java:33)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ServerDescriptor$ServerHandlerCallbackDelegate.configureServer(ServerDescriptor.java:40)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:318)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:157)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ConfigurableServerExtension.configure(ConfigurableServerExtension.java:70)
+	at org.springsource.ide.eclipse.commons.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:419)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:84)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.templates.AbstractTemplateCommandExecutor.execute(AbstractTemplateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:22)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:77)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:151)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:115)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 6 more
+
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-08-17 15:27:14.264
+!MESSAGE Error creating server instance. Check access permission for the directory C:/Program Files (x86)/ggts-bundle/vfabric-tc-server-developer-2.9.5.SR1 and its files and subdirectories.
+!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2020-08-17 15:27:14.264
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' ...
+  Using separate layout
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:23)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:84)
+	at com.springsource.tcruntime.instance.internal.create.CreateCommandExecutor.execute(CreateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.templates.AbstractTemplateCommandExecutor.execute(AbstractTemplateCommandExecutor.java:1)
+	at com.springsource.tcruntime.instance.internal.AbstractCommand.execute(AbstractCommand.java:22)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.run(TcRuntimeInstance.java:77)
+	at com.springsource.tcruntime.instance.TcRuntimeInstance.main(TcRuntimeInstance.java:151)
+Caused by: java.io.IOException: Failed to create directory 'C:\Program Files (x86)\ggts-bundle\vfabric-tc-server-developer-2.9.5.SR1\base-instance'
+	at com.springsource.tcruntime.instance.internal.util.FileUtils.writeFile(FileUtils.java:115)
+	at com.springsource.tcruntime.instance.internal.layout.LayoutUtils.createLayoutIdentifier(LayoutUtils.java:21)
+	... 6 more
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-08-17 15:27:18.443
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\james'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
